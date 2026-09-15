@@ -3,69 +3,114 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="A simple starter website for testing GitHub and AI-assisted development."
-    />
-    <title>Northstar Studio</title>
+    <meta name="description" content="Ironwood Construction builds thoughtful homes, renovations, and commercial spaces across Alberta." />
+    <title>Ironwood Construction | Built to Last</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main>
-      <nav class="nav" aria-label="Primary navigation">
-        <a class="brand" href="#top">NORTHSTAR<span>•</span></a>
-        <a class="nav-link" href="#contact">Start a project <span aria-hidden="true">↗</span></a>
+    <header class="hero" id="top">
+      <nav class="nav wrap" aria-label="Primary navigation">
+        <a class="brand" href="#top"><span class="mark">I</span> IRONWOOD</a>
+        <div class="nav-links">
+          <a href="#services">Services</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact" class="nav-button">Request a quote <span>↗</span></a>
+        </div>
       </nav>
-
-      <section class="hero" id="top">
-        <p class="eyebrow">Independent creative studio · 2026</p>
-        <h1>Built for the<br /><em>next</em> good idea.</h1>
-        <div class="hero-bottom">
-          <p>We turn ambitious ideas into clear, useful digital experiences.</p>
-          <a class="round-link" href="#work" aria-label="See our work">↓</a>
+      <div class="hero-content wrap">
+        <p class="kicker">EST. 1998 · EDMONTON, ALBERTA</p>
+        <h1>Built around<br />what <em>matters.</em></h1>
+        <div class="hero-detail">
+          <p>Residential and commercial construction made personal—from the first sketch to the final walkthrough.</p>
+          <a href="#services" class="scroll-link">Explore our work <span>↓</span></a>
+        </div>
+      </div>
+      <div class="hero-image" aria-label="Modern home construction exterior"></div>
+    </header>
+    <main>
+      <section class="intro wrap" id="services" aria-labelledby="intro-heading">
+        <p class="section-label">01 / WHAT WE DO</p>
+        <div>
+          <h2 id="intro-heading">Good construction is<br /><em>quietly</em> exceptional.</h2>
+          <p class="intro-copy">We bring lasting materials, clear communication, and a hands-on team to every home, renovation, and workspace we build.</p>
         </div>
       </section>
-
-      <section class="work" id="work" aria-labelledby="work-heading">
-        <div class="section-heading">
-          <p class="eyebrow">Selected work</p>
-          <h2 id="work-heading">A few things<br />we care about.</h2>
-        </div>
-        <div class="cards">
-          <article class="card card-sun">
-            <p>01 / Identity</p>
-            <h3>Solace<br />Coffee Co.</h3>
-            <span>Brand strategy</span>
-          </article>
-          <article class="card card-blue">
-            <p>02 / Digital</p>
-            <h3>Good<br />Company</h3>
-            <span>Web experience</span>
-          </article>
-          <article class="card card-coral">
-            <p>03 / Product</p>
-            <h3>Field<br />Notes</h3>
-            <span>Product design</span>
-          </article>
+      <section class="services wrap" aria-label="Construction services">
+        <article class="service"><span>01</span><h3>Custom homes</h3><p>Thoughtfully planned homes built around the way your family actually lives.</p><a href="#contact">Learn more <b>↗</b></a></article>
+        <article class="service"><span>02</span><h3>Renovations</h3><p>Major renovations that respect the bones of your home and improve every day in it.</p><a href="#contact">Learn more <b>↗</b></a></article>
+        <article class="service"><span>03</span><h3>Commercial</h3><p>Distinctive spaces for businesses that care how their people and customers feel.</p><a href="#contact">Learn more <b>↗</b></a></article>
+      </section>
+      <section class="projects" id="projects" aria-labelledby="projects-heading">
+        <div class="wrap projects-heading"><p class="section-label">02 / SELECTED WORK</p><h2 id="projects-heading">Made to feel<br />like <em>home.</em></h2></div>
+        <div class="project-grid wrap">
+          <article class="project project-one"><div><span>RIVER VALLEY RESIDENCE</span><strong>2025</strong></div></article>
+          <article class="project project-two"><div><span>JASPER AVENUE LOFT</span><strong>2024</strong></div></article>
+          <article class="project project-three"><div><span>THE CORNER BAKERY</span><strong>2024</strong></div></article>
         </div>
       </section>
-
+      <section class="process wrap" aria-labelledby="process-heading">
+        <p class="section-label">03 / THE IRONWOOD WAY</p>
+        <div class="process-content"><h2 id="process-heading">A better build<br />starts with <em>trust.</em></h2><ol>
+          <li><span>01</span><div><h3>Listen closely</h3><p>We start with your goals, your budget, and the life you want the finished space to support.</p></div></li>
+          <li><span>02</span><div><h3>Plan clearly</h3><p>You will know what is happening, who is doing it, and what comes next—at every stage.</p></div></li>
+          <li><span>03</span><div><h3>Build carefully</h3><p>Our experienced team stays accountable to the details that make the difference years later.</p></div></li>
+        </ol></div>
+      </section>
       <section class="contact" id="contact">
-        <p class="eyebrow">Have something in mind?</p>
-        <h2>Let's make it<br /><em>matter.</em></h2>
-        <a class="email" href="mailto:hello@example.com">hello@example.com <span>↗</span></a>
+        <div class="wrap contact-grid">
+          <div class="contact-copy">
+            <p class="section-label">START A CONVERSATION</p>
+            <h2>Let’s build<br />something <em>lasting.</em></h2>
+            <p>Tell us a little about your project. We will be in touch within two business days.</p>
+            <a class="contact-link" href="mailto:hello@ironwoodconstruction.ca">Prefer email? Say hello <span>↗</span></a>
+            <p class="contact-note">Or call 780 555 0148 · Monday–Friday, 8am–5pm</p>
+          </div>
+          <form class="quote-form" id="quote-form">
+            <div class="form-row">
+              <label>First name<input name="firstName" autocomplete="given-name" required /></label>
+              <label>Last name<input name="lastName" autocomplete="family-name" required /></label>
+            </div>
+            <div class="form-row">
+              <label>Email<input type="email" name="email" autocomplete="email" required /></label>
+              <label>Phone<input type="tel" name="phone" autocomplete="tel" required /></label>
+            </div>
+            <label>What can we help with?
+              <select name="service" required>
+                <option value="" selected disabled>Select a service</option>
+                <option>Custom home</option><option>Home renovation</option><option>Commercial project</option><option>Something else</option>
+              </select>
+            </label>
+            <div class="form-row">
+              <label>Estimated budget
+                <select name="budget" required><option value="" selected disabled>Select a range</option><option>Under $100,000</option><option>$100,000–$250,000</option><option>$250,000–$500,000</option><option>$500,000+</option></select>
+              </label>
+              <label>Ideal start
+                <select name="timeline" required><option value="" selected disabled>Select a timeframe</option><option>As soon as possible</option><option>Within 3 months</option><option>3–6 months</option><option>Just exploring</option></select>
+              </label>
+            </div>
+            <label>Tell us about your project<textarea name="details" rows="4" placeholder="Location, goals, and anything else we should know" required></textarea></label>
+            <button type="submit">Request a quote <span>↗</span></button>
+            <p class="form-status" id="form-status" aria-live="polite"></p>
+          </form>
+        </div>
       </section>
     </main>
-
-    <footer>
-      <span>© 2026 Northstar Studio</span>
-      <span>Made as a Git &amp; GitHub test project</span>
-    </footer>
+    <footer class="wrap"><span>© 2026 Ironwood Construction</span><span>Edmonton, Alberta</span><a href="#top">Back to top ↑</a></footer>
+    <script>
+      document.getElementById("quote-form").addEventListener("submit", function (event) {
+        event.preventDefault();
+        const form = new FormData(event.currentTarget);
+        const body = [
+          "New quote request", "", "Name: " + form.get("firstName") + " " + form.get("lastName"),
+          "Email: " + form.get("email"), "Phone: " + form.get("phone"), "Service: " + form.get("service"),
+          "Budget: " + form.get("budget"), "Ideal start: " + form.get("timeline"), "", "Project details:", form.get("details")
+        ].join("\n");
+        document.getElementById("form-status").textContent = "Opening your email app with your quote request…";
+        window.location.href = "mailto:hello@ironwoodconstruction.ca?subject=" + encodeURIComponent("Quote request from " + form.get("firstName") + " " + form.get("lastName")) + "&body=" + encodeURIComponent(body);
+      });
+    </script>
   </body>
 </html>
